@@ -1,0 +1,11 @@
+<ng-container *ngIf="!hideLayout">
+  <div class="layout-container">
+    <app-sidebar *ngIf="showSidebar"></app-sidebar>
+    <div class="layout-content" *ngIf="showHeader">
+      <app-header></app-header>
+      <div class="layout-main-content">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</ng-container>

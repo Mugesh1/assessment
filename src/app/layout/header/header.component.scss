@@ -1,0 +1,37 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #34495e;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  
+  .header-left {
+    display: flex;
+    align-items: center;
+
+    .menu-toggle {
+      background: none;
+      border: none;
+      color: #fff;
+      font-size: 1.5rem;
+      margin-right: 20px;
+      cursor: pointer;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
+
+  .header-right {
+    .logout-btn {
+      background: none;
+      border: none;
+      color: #fff;
+      font-size: 2rem;
+      cursor: pointer;
+    }
+  }
+}

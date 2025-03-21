@@ -1,0 +1,168 @@
+{
+  "login": [
+    {
+      "email": "test123@gmail.com",
+      "password": "password123",
+      "token": "token123abc",
+      "message": "Login successful",
+      "user": {
+        "id": "1",
+        "email": "test123@gmail.com",
+        "userName": "Test123"
+      }
+    },
+    {
+      "email": "test@gmail.com",
+      "password": "securepass",
+      "token": "token456def",
+      "message": "Login successful",
+      "user": {
+        "id": "2",
+        "email": "test@gmail.com",
+        "userName": "Test"
+      }
+    },
+    {
+      "email": "admin@gmail.com",
+      "password": "admin",
+      "token": "token456def",
+      "message": "Login successful",
+      "user": {
+        "id": "3",
+        "email": "admin@gmail.com",
+        "userName": "Admin"
+      }
+    },
+    {
+      "email": "admin123@gmail.com",
+      "password": "admin123",
+      "token": "token456def",
+      "message": "Login successful",
+      "user": {
+        "id": "4",
+        "email": "admin123@gmail.com",
+        "userName": "Admin123"
+      }
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "email": "test123@gmail.com",
+      "userName": "Test123",
+      "firstName": "Test",
+      "lastName": "123",
+      "role": "admin",
+      "token": "token123abc"
+    },
+    {
+      "id": "2",
+      "email": "test@gmail.com",
+      "userName": "Test",
+      "firstName": "Test",
+      "lastName": "Test",
+      "role": "user",
+      "token": "token456def"
+    },
+    {
+      "id": "3",
+      "email": "admin@gmail.com",
+      "userName": "Admin",
+      "firstName": "Admin",
+      "lastName": "Admin",
+      "role": "user",
+      "token": "token987def"
+    },
+    {
+      "id": "4",
+      "email": "admin123@gmail.com",
+      "userName": "Admin123",
+      "firstName": "Admin",
+      "lastName": "123",
+      "role": "user",
+      "token": "token923def"
+    }
+  ],
+  "items":[
+    {
+      "id": "1",
+      "itemName": "Apple iPhone 15",
+      "category": "Electronics",
+      "price": 79999,
+      "stock": 10,
+      "rating": 4.8
+    },
+    {
+      "id": "2",
+      "itemName": "Samsung Galaxy S23",
+      "category": "Electronics",
+      "price": 74999,
+      "stock": 15,
+      "rating": 4.7
+    },
+    {
+      "id": "3",
+      "itemName": "Nike Air Max Shoes",
+      "category": "Footwear",
+      "price": 12999,
+      "stock": 25,
+      "rating": 4.6
+    },
+    {
+      "id": "4",
+      "itemName": "Sony WH-1000XM5 Headphones",
+      "category": "Electronics",
+      "price": 29999,
+      "stock": 8,
+      "rating": 4.9
+    },
+    {
+      "id": "5",
+      "itemName": "The Alchemist - Paulo Coelho",
+      "category": "Books",
+      "price": 499,
+      "stock": 50,
+      "rating": 4.5
+    },
+    {
+      "id": "6",
+      "itemName": "Wooden Study Table",
+      "category": "Furniture",
+      "price": 15999,
+      "stock": 12,
+      "rating": 4.3
+    },
+    {
+      "id": "7",
+      "itemName": "HP Pavilion Laptop",
+      "category": "Electronics",
+      "price": 64999,
+      "stock": 5,
+      "rating": 4.4
+    },
+    {
+      "id": "8",
+      "itemName": "Adidas Running T-Shirt",
+      "category": "Clothing",
+      "price": 1999,
+      "stock": 30,
+      "rating": 4.2
+    },
+    {
+      "id": "9",
+      "itemName": "Fastrack Smart Watch",
+      "category": "Wearables",
+      "price": 5999,
+      "stock": 20,
+      "rating": 4.1
+    },
+    {
+      "id": "10",
+      "itemName": "Bose SoundLink Bluetooth Speaker",
+      "category": "Electronics",
+      "price": 19999,
+      "stock": 7,
+      "rating": 4.8
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+.table-container {
+  margin: 20px;
+  padding: 15px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow-x: auto; 
+  .mat-header-row, .mat-row {
+    display: flex; 
+    justify-content: space-between;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: transparent;
+  }
+
+  th.mat-header-cell {
+    text-align: left;
+    font-weight: bold;
+    padding: 10px 15px;
+    color: #333;
+    border-bottom: 2px solid #ddd;
+  }
+
+  td.mat-cell {
+    padding: 10px 15px;
+    color: #555;
+    border-bottom: 1px solid #eee;
+  }
+
+  th.mat-sort-header-button {
+    color: #555;
+
+    &:hover {
+      color: #000;
+    }
+  }
+
+  .mat-sort-header-arrow {
+    color: #999;
+  }
+
+  .mat-paginator {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+
+    .mat-paginator-range-label {
+      font-size: 0.875rem;
+      color: #555;
+    }
+
+    .mat-icon-button {
+      background-color: transparent;
+      border-radius: 50%;
+      transition: background-color 0.2s;
+
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.05);
+      }
+    }
+  }
+}
+
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  font-size: 1.5rem;
+  color: #666;
+}

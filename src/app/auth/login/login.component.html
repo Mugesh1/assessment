@@ -1,0 +1,21 @@
+<div class="background">
+  <div class="glassy-form-container">
+    <div class="glassy-form">
+      <h2>SIGN IN TO YOUR ACCOUNT</h2>
+    </div>
+    <div class="login-form">
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <div class="section-b">
+          <mat-label>Email Id</mat-label>
+          <input class="input" type="email" name="email" matInput formControlName="email" maxlength="50" required>
+        </div>
+        <div class="section-b">
+          <mat-label>Password</mat-label>
+          <input class="input" type="password" name="password" matInput formControlName="password" maxlength="50" required>
+        </div>
+        <button class="disBut" mat-flat-button color="primary" type="submit">Sign In</button>
+      </form>
+    </div>
+  </div>
+  
+</div>

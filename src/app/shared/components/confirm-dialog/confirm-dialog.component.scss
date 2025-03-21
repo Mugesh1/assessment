@@ -1,0 +1,80 @@
+@use "sass:color";
+
+.dialog-close-wrapper {
+  padding: 0px;
+  background-color: #34495e;
+  color: #fff;
+  cursor: move;
+
+  h3 {
+    margin: 0;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #fff;
+  }
+}
+
+mat-dialog-content {
+  padding: 16px 24px ;
+  color: #555;
+  max-height: 400px;
+  overflow-y: auto;
+
+  .headerClass {
+    font-size: 1.2rem;
+    text-align: center !important;
+    font-weight: bold;
+    color: #3f51b5;
+    margin-bottom: 16px;
+  }
+}
+
+mat-dialog-actions {
+  padding: 16px 24px;
+  border-top: 1px solid #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  button {
+    padding: 8px 20px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+    &.btn-common {
+      color: #fff;
+      background-color: #4caf50;
+    }
+
+    &:hover {
+      background-color: color.adjust(#4caf50, $lightness: -10%);
+    }
+
+    &.popup-action-button {
+      background-color: var(--btn-background, #2196f3);
+    }
+  }
+}
+
+.cdk-drag-preview {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+}
+
+.cdk-drag-handle {
+  cursor: grab;
+}
+
+@media (max-width: 768px) {
+  .mat-dialog-content {
+    padding: 12px;
+  }
+
+  button {
+    padding: 6px 14px;
+  }
+}

@@ -1,0 +1,134 @@
+.background {
+  position: relative;
+  height: 100vh;
+  background-image: url('../../../assets/images/background.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.glassy-form-container {
+  position: relative;
+  background: rgba(255, 255, 255, 0.1); /* Glass effect */
+  border-radius: 12px;
+  padding: 40px;
+  backdrop-filter: blur(10px); /* Glass effect blur */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  // width: 100%;
+  max-width: 450px;
+
+  .glassy-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 20px;
+
+    img {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 22px;
+      color: white;
+      font-family: 'Arial', sans-serif;
+      font-weight: 600;
+    }
+  }
+
+  .login-form {
+    .section-b {
+      margin-bottom: 20px;
+      mat-label {
+        font-size: 16px;
+        color: white;
+        margin-bottom: 5px;
+      }
+
+      .input {
+        width: 100%;
+        padding: 12px;
+        font-size: 14px;
+        border-radius: 6px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        background-color: rgba(255, 255, 255, 0.2);
+        color: white;
+        transition: all 0.3s ease-in-out;
+
+        &:focus {
+          outline: none;
+          border-color: #007bff;
+          background-color: rgba(255, 255, 255, 0.4);
+        }
+      }
+    }
+
+    .disBut {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      background-color: #a39264;
+      color: white;
+      border-radius: 6px;
+      text-transform: uppercase;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out;
+
+      &:hover {
+        background-color: #756741;
+      }
+
+      &:disabled {
+        background-color: #cccccc;
+        cursor: not-allowed;
+      }
+    }
+  }
+}
+
+.fab-button {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;
+  border-radius: 50%;
+  padding: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  i {
+    color: white;
+    font-size: 24px;
+  }
+
+  &:hover {
+    background-color: #0056b3;
+  }
+}
+
+@media (max-width: 768px) {
+  .glassy-form-container {
+    width: 90%;
+    padding: 30px;
+  }
+
+  .glassy-form h2 {
+    font-size: 20px;
+  }
+
+  .disBut {
+    font-size: 14px;
+  }
+}
