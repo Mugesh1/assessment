@@ -61,8 +61,97 @@ This app follows a component-based architecture with Angular services, state man
 
 # Folder Structure
 
-├───app.component.html ├───app.component.scss ├───app.component.spec.ts ├───app.component.ts ├───app.config.ts ├───app.routes.ts │ ├───auth │ └───login │ ├───login.component.html │ ├───login.component.scss │ ├───login.component.spec.ts │ └───login.component.ts │ ├───core │ ├───guards │ │ └───auth.guard.ts │ │ │ ├───interceptor │ │ └───auth.interceptor.ts │ │ │ ├───services │ │ ├───auth.service.spec.ts │ │ ├───auth.service.ts │ │ ├───configService.ts │ │ └───loader.service.ts │ │ │ └───store │ ├───auth.store.ts │ ├───items.store.ts │ └───user.store.ts │ ├───dashboard │ ├───dashboard.component.html │ ├───dashboard.component.scss │ ├───dashboard.component.spec.ts │ └───dashboard.component.ts │ ├───items │ ├───items.component.html │ ├───items.component.scss │ ├───items.component.spec.ts │ └───items.component.ts │ ├───layout │ ├───layout.component.html │ ├───layout.component.scss │ ├───layout.component.spec.ts │ └───layout.component.ts │ │ ├───header │ │ ├───header.component.html │ │ ├───header.component.scss │ │ ├───header.component.spec.ts │ │ └───header.component.ts │ │ │ └───sidebar │ ├───sidebar.component.html │ ├───sidebar.component.scss │ ├───sidebar.component.spec.ts │ └───sidebar.component.ts │ ├───loader │ ├───loader.component.html │ ├───loader.component.scss │ ├───loader.component.spec.ts │ └───loader.component.ts │ ├───shared │ ├───material.module.ts │ ├───shared.module.ts │ │ │ └───components │ ├───confirm-dialog │ │ ├───confirm-dialog-config.ts │ │ ├───confirm-dialog.component.html │ │ ├───confirm-dialog.component.scss │ │ ├───confirm-dialog.component.spec.ts │ │ └───confirm-dialog.component.ts │ │ │ └───snackbar │ ├───snackbar.component.html │ ├───snackbar.component.scss │ ├───snackbar.component.spec.ts │ └───snackbar.component.ts │ └───user ├───user.component.html ├───user.component.scss ├───user.component.spec.ts └───user.component.ts
-
+│   app.component.html
+│   app.component.scss
+│   app.component.spec.ts
+│   app.component.ts
+│   app.config.ts
+│   app.routes.ts
+│
+├───auth
+│   └───login
+│           login.component.html
+│           login.component.scss
+│           login.component.spec.ts
+│           login.component.ts
+│
+├───core
+│   ├───guards
+│   │       auth.guard.ts
+│   │       
+│   ├───interceptor
+│   │       auth.interceptor.ts
+│   │
+│   ├───services
+│   │       auth.service.spec.ts
+│   │       auth.service.ts
+│   │       configService.ts
+│   │       loader.service.ts
+│   │
+│   └───store
+│           auth.store.ts
+│           items.store.ts
+│           user.store.ts
+│
+├───dashboard
+│       dashboard.component.html
+│       dashboard.component.scss
+│       dashboard.component.spec.ts
+│       dashboard.component.ts
+│
+├───items
+│       items.component.html
+│       items.component.scss
+│       items.component.spec.ts
+│       items.component.ts
+│
+├───layout
+│   │   layout.component.html
+│   │   layout.component.scss
+│   │   layout.component.spec.ts
+│   │   layout.component.ts
+│   │
+│   ├───header
+│   │       header.component.html
+│   │       header.component.scss
+│   │       header.component.spec.ts
+│   │       header.component.ts
+│   │
+│   └───sidebar
+│           sidebar.component.html
+│           sidebar.component.scss
+│           sidebar.component.spec.ts
+│           sidebar.component.ts
+│
+├───loader
+│       loader.component.html
+│       loader.component.scss
+│       loader.component.spec.ts
+│       loader.component.ts
+│
+├───shared
+│   │   material.module.ts
+│   │   shared.module.ts
+│   │
+│   └───components
+│       ├───confirm-dialog
+│       │       confirm-dialog-config.ts
+│       │       confirm-dialog.component.html
+│       │       confirm-dialog.component.scss
+│       │       confirm-dialog.component.spec.ts
+│       │       confirm-dialog.component.ts
+│       │
+│       └───snackbar
+│               snackbar.component.html
+│               snackbar.component.scss
+│               snackbar.component.spec.ts
+│               snackbar.component.ts
+│
+└───user
+        user.component.html
+        user.component.scss
+        user.component.spec.ts
+        user.component.ts
 # JSON Server Setup
 
 **JSON Server** is a simple and fast way to set up a full REST API using a static JSON file as a database. Below are the steps to set it up for your project.
